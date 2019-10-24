@@ -331,6 +331,18 @@ header.masthead h1 {
 	background-position: 50% 50%;
 }
 
+.case-study-img-4 {
+	display: block;
+	position: relative;
+	background-image: url(../img/survey-graphic.png);
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
 .leadership-img-1{
 
 	display: block;
