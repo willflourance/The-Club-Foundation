@@ -15,6 +15,42 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
 
+<style>
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 55%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+
 <!-- Plugin CSS -->
 <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
@@ -61,7 +97,7 @@
     </div>
   </div>
 </header>
-<section class="section"> <a name="about" class="anchor"/>
+<section class="section"> <a name="about" class="anchor"/></a>
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
@@ -73,174 +109,38 @@
   </div>
 </section>
 
-<!--<section class="bg-primary section" id="boot-auction">
-  <div class="container">
-    <div class="row text-white">
-      <h2 class="section-heading">Nashville Boot Auction to Support The Club Foundation!
-  <hr class="my-4 light" align="left">
-      </h2>
-
-    </div>
-    <div class="row">
-      <div class="card text-dark">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#auction" data-toggle="tab" role="tab">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#info" data-toggle="tab" role="tab">Info</a>
-            </li>
-          </ul>
-        </div>
-        <div class="tab-content">
-          <div class="card-body tab-pane active show" role="tabpanel" id="auction" >
-<div class="row">
-            <div class="col-md-3">
-              <img src="img/boot-auction.jpg" class="img-fluid"/>
-            </div>
-            <div class="col-md-9">
-              <h5 class="card-title my-3">
-                <strong>Howdy!</strong>
-              </h5>
-              <p class="card-text">For 2019 World Conference in Nashville, The Club Foundation will be hosting a boot auction! Yes, boots like in cowboy boots! The thinking here is to auction off pairs of cowboy boots and have them available at “buy it now” prices so that members can buy and wear for the networking event and throughout conference. We are asking for your help in making this possible. We’d like to ask each Chapter and each Exhibitor to donate one or more pairs of boots for the auction! The best place to purchase the boots is through Zappos because they have a 365 day return policy. So, for example, if someone buys the boots but the size isn’t right, the winner will have a year to exchange for the correct size. Additionally, Zappos has a tremendous selection in many price points from the uber-luxe Lucchese boots to Roper and Dingo brands, really something for everyone. Check out these two links, the first is men’s boots and the second is ladies.</p>
-              <a class="btn btn-primary btn-cta-2 my-2" href="https://www.zappos.com/men-cowboy-boots/CK_XARCz1wEYyewBwAEC4gIEAQIDGA.zso">Men's</a>
-              <a class="btn btn-primary btn-cta-2 my-2 " href="https://www.zappos.com/women-cowboy-boots/CK_XARCz1wEYyewBwAEB4gIEAQIDGA.zso?s=price/desc/">Women's</a>
-              <a class="btn btn-primary btn-cta-2 my-2 " href="documents/forms/CF_DonationForm2019_01.pdf" target="_blank">Donate</a>
-            </div>
-</div>
-
-          </div>
-          <div class="card-body tab-pane" role="tabpanel" id="info">
-            <h5 class="card-title">
-              <strong>What size should I buy?</strong>
-            </h5>
-            <p>The most common boot size for men is 10 ½ and for women it’s 7 ½ -8. My suggestion would be to buy boots in this range but feel free to venture out because with over 2,000 attendees, there are bound to be many different boot sizes at the conference. If the boot does not fit the auction winner, the boots can be easily exchanged by the winner if the boots were purchased at Zappos.
-            </p>
-            <h5 class="card-title">
-              <strong>Do you have a preference on color, leather, or heel height?</strong>
-            </h5>
-            <p>No, this is up to you. Buy something that speaks to you. Use your creativity!
-            </p>
-            <h5 class="card-title">
-              <strong>What do I do with them after I buy them?</strong>
-            </h5>
-            <p>Please fill out the attached donation <a href="documents/forms/CF_DonationForm2019_01.pdf" target="_blank"><strong>form</strong></a> and send back to me. I will keep track of who donated what and you will receive credit and marketing on the auction app.
-            </p>
-            <h5 class="card-title">
-              <strong>How much should I spend on the boots?</strong>
-            </h5>
-            <p>That’s entirely up to you. Please spend generously as that will increase the proceeds from the boot auction. All funds generated from the auction will support The Club Foundation scholarship and grants program. The more you give, the more we can give.
-            </p>
-            <h5 class="card-title">
-              <strong>Are you doing this in lieu of the wine auction or the other Club Foundation auction?</strong>
-            </h5>
-            <p>No, this will be in addition to and not instead of the wine auction supported by The Club Foundation at World Conference.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>-->
-
-<section class="bg-primary section">
-  <div class="container">
-    <div class="row text-white">
-      <h2 class="section-heading">50/50 Raffle
+<section>
+  <div class="container-fluid">
+    <div class="row" style="padding: 0 0px;">
+    <div class="bg-primary col-lg-6 col-md-6">
+      <div class="case-study">
+        <h2 class="display-4"><strong class="">2019 Club Foundation Pulse Survey</strong></h2>
         <hr class="my-4 light" align="left">
-      </h2>
-    </div>
-    <div class="row">
-      <div class="card text-dark">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#raffle" data-toggle="tab" role="tab">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#rules" data-toggle="tab" role="tab">Official Rules</a>
-            </li>
-          </ul>
+        <h3>Share your thoughts with us!</h3>
+        <div class="mt-5"> <a class="btn btn-primary btn-xl btn-cta" href="https://www.surveymonkey.com/r/2J8328N">Take Survey</a> </div>
+        <div class=" my-5 ">
+          <p><em>Closes Monday, September 9</em></p>
         </div>
-        <div class="tab-content">
-          <div class="card-body tab-pane active show" role="tabpanel" id="raffle" >
-<div class="row">
-            <div class="col-md-3">
-              <img src="img/50-50-ticket-graphic.png" class="img-fluid"/>
-            </div>
-            <div class="col-md-9">
-              <h5 class="card-title my-3">
-                <strong>Feeling Lucky? Play to Win!</strong>
-              </h5>
-              <p class="card-text">Participate in The Club Foundation’s 50/50 Raffle for a chance to win big for a good cause! CMAA Members and Exhibitors have the opportunity to purchase raffle tickets for the chance to win 50 percent of the total jackpot. The remainder of the jackpot benefits The Club Foundation in support of Education, Research, and Charitable Giving initiatives for the club industry. </p>
-              <p class="card-text">Raffle tickets may be purchased by texting the word <strong>CMAA</strong> to <strong>51555</strong>. Live updates of the jackpot will be on display throughout the Music City Center. The winner will be announced on Thursday, February 28 during the Closing Business Session at World Conference. You need not be present to win, and you do not need to attend Conference to participate. Good luck!</p>
-            </div>
-</div>
-
-          </div>
-          <div class="card-body tab-pane" role="tabpanel" id="rules">
-            <p>VOID WHERE PROHIBITED BY LAW. Subject to all applicable federal, state, and local laws, regulations, and ordinances. Raffle begins on Friday, February 1st, 2019 at 12:01 AM EST. The Raffle will close at 1:45 PM CST on Thursday, February 28th, 2019.</p>
-<ol>
-<li>Eligibility: The Club Foundation 50:50 Raffle is open to Club Management Association of America (&ldquo;CMAA&rdquo;) members and 2019 World Conference Exhibitors only. Employees, officers, and directors of CMAA and The Club Foundation or any of their respective parents, affiliates, subsidiaries, representatives, and members of their immediate families (spouses, parents, siblings and children, regardless of where they live) and those living in the same household are not eligible to enter or win. Participation constitutes entrant&rsquo;s full and unconditional agreement to these Official Rules and to decisions, which are final and binding in all matters related to the Raffle. Winning a prize is contingent upon fulfilling all requirements set forth herein.</li>
-</ol>
-<ol start="2">
-<li>Sponsor: The Club Foundation, 1733 King Street, Alexandria, VA 22314 (&ldquo;The Club Foundation&rdquo; or &ldquo;Sponsor&rdquo;).</li>
-</ol>
-<ol start="3">
-<li>How to Enter: To enter, text &ldquo;CMAA&rdquo; to 51555. Raffle tickets may be purchased in the following increments: one ticket for $20, three tickets for $50 and seven tickets for $100. Each ticket will count as one chance to win the Jackpot as defined herein. The total proceeds from raffle tickets sold, less reasonable expenses incurred by The Club Foundation for the operation of the Raffle shall be the &ldquo;Jackpot.&rdquo;</li>
-</ol>
-<ol start="2">
-<li>Selection/Notification of Winner: At CMAA&rsquo;s World Conference Closing Business Session on Thursday, February 28<sup>th</sup>, 2019 at 2:15 p.m. CST, The Club Foundation will select and announce the name of the winner of the prize in a random drawing from all raffle tickets purchased. The odds of winning are based on the number of eligible entries received. The winner will receive a confirmation letter and a check for the Grand Prize by mail on or about March 30, 2019. Except where legally prohibited, the winner must sign and return, within seven (7) days of receiving the notification, an Affidavit of Eligibility, Liability &amp; Publicity Release to claim his/her prize. If a potential Winner cannot be contacted in person via email, telephone, and/or registered mail after the first attempt to contact him/her, or if he/she fails to sign and return the Affidavit of Eligibility, Liability &amp; Publicity Release within the required time period, or in the event that a potential Winner is disqualified for any reason, The Club Foundation will award the applicable prize to an alternate winner selected by a random drawing from among all remaining eligible entries. Only one alternate drawing will be held, after which any remaining prizes will remain un-awarded.</li>
-</ol>
-<p>Verification of Potential Winners: ALL POTENTIAL WINNERS ARE SUBJECT TO VERIFICATION BY THE CLUB FOUNDATION, WHOSE DECISIONS ARE FINAL AND BINDING IN ALL MATTERS RELATED TO THE RAFFLE. AN ENTRANT IS NOT A WINNER OF ANY PRIZE UNLESS AND UNTIL ENTRANT&rsquo;S ELIGIBILITY HAS BEEN VERIFIED AND ENTRANT HAS BEEN NOTIFIED THAT VERIFICATION IS COMPLETE.&nbsp;</p>
-<ol start="3">
-<li>Prize. One Grand Prize will be awarded. The Grand Prize consists of fifty percent (50%) of the Jackpot, and the remaining fifty percent (50%) of the Jackpot will benefit The Club Foundation, a 501(c)(3) organization.&nbsp;</li>
-</ol>
-<p>PRIZE RESTRICTIONS: Limit one (1) prize per person, per household. All applicable federal, state, and local taxes and all fees and expenses related to acceptance and use of prize not specifically stated herein are the responsibility solely of winner. Prize cannot be substituted, assigned, or transferred; however, The Club Foundation reserves the right to make equivalent prize substitutions at its sole discretion. The Club Foundation will not replace any lost or stolen prizes or components of a prize(s). Prize cannot be used in conjunction with any other promotion or offer. Only the number of prizes stated in these Official Rules is available to be won in the Raffle. If, by reason of a print or other error, more prizes are claimed than the number set forth in these Official Rules, an alternate winner will be selected in accordance with the winner selection method described above from among all eligible claimants making purportedly valid claims to award the advertised number of prizes available.</p>
-<ol start="4">
-<li>General Conditions. If, for any reason, the Raffle is not capable of running as planned, including infection by computer virus or bugs, tampering, unauthorized intervention, fraud, technical failures, or any other causes beyond the control of The Club Foundation which corrupt or affect the operation, administration, security, fairness, integrity, or proper conduct of this Raffle, The Club Foundation may, in its sole discretion, void any suspect entries and (a) cancel or terminate the Raffle (or any portion thereof); (b) modify the Raffle or suspend the Raffle to address the impairment and then resume the Raffle in a manner that best conforms to the spirit of these Official Rules; and/or (c) award the prize from among the eligible, non-suspect entries received up to the time of impairment, and all eligible entries received.</li>
-</ol>
-<p>WARNING: ANY ATTEMPT BY AN ENTRANT OR ANY OTHER INDIVIDUAL TO UNDERMINE THE LEGITIMATE OPERATION OF THE RAFFLE MAY BE A VIOLATION OF CRIMINAL AND CIVIL LAW, AND, SHOULD SUCH AN ATTEMPT BE MADE, SPONSOR RESERVES THE RIGHT TO PROSECUTE AND SEEK DAMAGES FROM ANY SUCH PERSON TO THE FULLEST EXTENT PERMITTED BY LAW. Sponsor&rsquo;s failure to enforce any term of these Official Rules shall not constitute a waiver of that provision. Neither Sponsor nor anyone acting on its behalf will enter into any communications with any entrant regarding this Raffle, except as expressly set forth in these Official Rules. Sponsor reserves the right at its sole discretion to disqualify any individual it finds to be attempting to tamper with or undermine the entry process, and/or the legitimate operation of the Raffle; to violate the Official Rules; or to act in an unsportsmanlike or disruptive manner or with the intent to annoy, abuse, threaten, or harass any other person. Entrants agree that Sponsor shall own the entries, which shall not be acknowledged or returned.</p>
-<ol start="5">
-<li>Release and Limitation of Liability. BY PARTICIPATING IN THIS RAFFLE, ENTRANTS AGREE THAT THE CLUB FOUNDATION, AND ITS RESPECTIVE AFFILIATES, PARENTS, SUBSIDIARIES, FRANCHISEES, REPRESENTATIVES, CONSULTANTS, CONTRACTORS, LEGAL COUNSEL, BOARD OF GOVERNORS AND THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES, REPRESENTATIVES, AND AGENTS (COLLECTIVELY, THE &ldquo;RELEASED PARTIES&rdquo;) WILL HAVE NO LIABILITY OR RESPONSIBILITY WHATSOEVER FOR, AND SHALL BE HELD HARMLESS BY ENTRANTS AGAINST, ANY LIABILITY FOR ANY INJURIES, LOSSES OR DAMAGES OF ANY KIND (INCLUDING WITHOUT LIMITATION, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES) TO PERSONS, INCLUDING PERSONAL INJURY OR DEATH, OR PROPERTY RESULTING IN WHOLE OR IN PART, DIRECTLY OR INDIRECTLY, FROM ACCEPTANCE, POSSESSION, MISUSE, OR USE OF A PRIZE, ENTRY, OR PARTICIPATION IN THIS RAFFLE OR IN ANY RAFFLE RELATED ACTIVITY, OR ANY CLAIMS BASED ON PUBLICITY RIGHTS, DEFAMATION OR INVASION OF PRIVACY, OR MERCHANDISE DELIVERY. THE RELEASED PARTIES ARE NOT RESPONSIBLE IF ANY PRIZE CANNOT BE AWARDED DUE TO CANCELLATIONS, DELAYS, OR INTERRUPTIONS DUE TO ACTS OF GOD, ACTS OF WAR, NATURAL DISASTERS, WEATHER, OR TERRORISM.</li>
-</ol>
-<p>WITHOUT LIMITING THE FOREGOING, AND EXCEPT WHERE PROHIBITED BY LAW, EVERYTHING REGARDING THIS RAFFLE, INCLUDING THE PRIZE, IS PROVIDED &ldquo;AS IS&rdquo; WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. SOME JURISDICTIONS MAY NOT ALLOW THE LIMITATIONS OR EXCLUSIONS OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES OR EXCLUSION OF IMPLIED WARRANTIES, SO SOME OF THE ABOVE LIMITATIONS OR EXCLUSIONS MAY NOT APPLY. CHECK LOCAL LAWS FOR ANY RESTRICTIONS OR LIMITATIONS REGARDING THESE LIMITATIONS OR EXCLUSIONS.</p>
-<ol start="6">
-<li>Publicity Release. EXCEPT WHERE PROHIBITED BY LAW, WINNER GRANTS TO THE CLUB FOUNDATION (WHICH GRANT WILL BE CONFIRMED IN WRITING ON REQUEST OF THE CLUB FOUNDATION), ITS AFFILIATES, CONTRACTORS, AGENTS, AND THOSE ACTING PURSUANT TO ITS AUTHORITY, THE RIGHT AND PERMISSION TO PRINT, PUBLISH, BROADCAST, AND USE, WORLDWIDE IN ANY MEDIA NOW KNOWN OR HEREAFTER DEVELOPED, INCLUDING BUT NOT LIMITED TO THE WORLD WIDE WEB, AT ANY TIME OR TIMES, THE WINNER&rsquo;S NAME, PORTRAIT, PICTURE, VOICE, LIKENESS, OPINIONS AND BIOGRAPHICAL INFORMATION (INCLUDING WITHOUT LIMITATION HOMETOWN AND STATE) FOR ADVERTISING, TRADE, AND PROMOTIONAL PURPOSES WITHOUT ADDITIONAL CONSIDERATION, COMPENSATION, PERMISSION, OR NOTIFICATION.</li>
-</ol>
-<ol start="7">
-<li>Disputes. Except where prohibited by law, entrant agrees that: (1) any and all disputes, claims and causes of action arising out of or connected with this Raffle or any prize awarded shall be resolved individually, without resort to any form of class action, and exclusively by the United States District Court for the Eastern District of Virginia or the appropriate State Court located in Fairfax County, Virginia; (2) any and all claims, judgment, and awards shall be limited to actual out-of-pocket costs incurred, including costs associated with entering the Raffle, but in no event attorneys&rsquo; fees; (3) under no circumstances will entrant be permitted to obtain awards for, and entrant hereby waives all rights to claim, indirect, punitive, incidental and consequential damages and any other damages, other than for actual out-of-pocket expenses, any and all rights to have damages multiplied or otherwise increased. All issues and questions concerning the construction, validity, interpretation and enforceability of these Official Rules, or the rights and obligations of the entrant and The Club Foundation in connection with the Raffle, shall be governed by, and construed in accordance with, the laws of the State of Virginia, without giving effect to any choice of law or conflict of law rules (whether of the State of Virginia or any other jurisdiction), which would cause the application of the laws of any jurisdiction other than the State of Virginia.</li>
-</ol>
-<ol start="8">
-<li>Official Rules and Prize Winner. For a copy of the Official Rules, visit http://www.clubfoundation.org. For a list of winners available after March 30th, 2019, send a self-addressed, stamped envelope for receipt by April 1st, 2019 to: The Club Foundation, 1733 King Street, Alexandria, VA 22314. Vermont residents may exclude return postage on requests for Official Rules.</li>
-</ol>
-<ol start="9">
-<li>Privacy. Information collected from entrants is subject to The Club Foundation&rsquo;s Privacy Policy, which can be found at http://www.clubfoundation.org/donate.htm. The Club Foundation and The Club Foundation&rsquo;s agents, affiliates, representatives or service providers may use entrants&rsquo; and/or referrals&rsquo; personal information submitted with entry for purposes of prize fulfillment and/or for future marketing by The Club Foundation, such as to notify them of a promotion that The Club Foundation thinks may be of interest. The Club Foundation will not sell personal information submitted with entry to outside solicitors.</li>
-</ol>
-<p>The Club Foundation shall not be liable for technical, pictorial, typographical or editorial errors or omissions contained herein. Copyright &copy; 2019. The Club Foundation&reg; is a registered trademark of Club Management Association of America.</p>
-          </div>
-        </div>
+        <div class=""></div>
       </div>
     </div>
-    <div class="row d-none d-sm-block d-sm-none d-md-block">
-      <div class="text-center mt-5 "><iframe src="https://app.mobilecause.com/t/ck/1od6" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="600px" allowfullscreen></iframe></div>
-    </div>
+    <div class="col-lg-6 col-md-6  case-study-img-4"> </div>
+  </div>
   </div>
 </section>
+
 <section class="section bg-light" >
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
+      <div class="mx-auto text-center">
         <h2 class="section-heading ">Upcoming &nbsp;Scholarships &amp; Grants Deadlines</h2>
-        <h4>2019 scholarship application forms are currently being revised. Please check back in late March for updated forms.</h4>
         <hr class=" my-4">
       </div>
     </div>
 
     <div class="row my-4">
-		 <div class="col-lg-12"><strong><h4>2019</h4></strong> </div>
-      <div class="col-lg-4 col-md-4">
+		 <div class="col-12"><strong><h4>2019</h4></strong> </div>
+      <!--<div class="col-lg-4 col-md-4">
         <div class="news-box mt-3 mx-auto">
           <div class="lead">
             <p>Applications Due <br>
@@ -273,7 +173,7 @@
           <div class="date bg-faculty"><span>MAY<br>
             <strong class="day">1</strong></span></div>
         </div>
-      </div>
+      </div>-->
 		  <div class="col-lg-4 col-md-4">
         <div class="news-box mt-3 mx-auto">
           <div class="lead">
@@ -414,18 +314,6 @@
       <!--.Carousel-->
 
     </div>
-  </div>
-</section>
-<section>
-  <div class="p-3">
-    <div class="col-lg-8 mx-auto text-center">
-      <h2 class="section-heading ">Contact Us</h2>
-      <hr class=" my-4">
-    </div>
-    <div class="cognito">
-                                  <script src="https://services.cognitoforms.com/s/_IjRyaz06EWL-VTo4_nYeA"></script>
-                                  <script>Cognito.load("forms", { id: "13" });</script>
-                  </div>
   </div>
 </section>
 <!-- PORTFOLIO  <section class="p-0" id="portfolio">
@@ -599,7 +487,7 @@
 
 <!-- Footer -->
 
-<footer class="row no-margin">
+<footer class="row no-margin" style="padding: 0 0px;">
   <div class="bg-dark text-white col-lg-9 col-md-9 col-sm-12 col-xs-12" id="footer">
     <div>
       <div class="row">
@@ -629,7 +517,6 @@
           </ul>
         </div>
       </div>
-
 
       <!--/.row-->
     </div>
